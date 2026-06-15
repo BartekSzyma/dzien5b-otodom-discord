@@ -80,3 +80,19 @@ body {
   max-width: 280px; box-shadow: 0 8px 24px rgba(0,0,0,.5);
 }
 .tooltip b { color: var(--accent3); }
+.fetch-form { background: var(--bg-card); border-radius: var(--radius); padding: 20px; margin-bottom: 20px; box-shadow: 0 0 24px rgba(0,229,255,.15); }
+.fetch-form form { display: flex; flex-wrap: wrap; gap: 16px; align-items: end; }
+.fetch-form label { display: flex; flex-direction: column; gap: 6px; font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }
+.fetch-form input, .fetch-form select, .filters-row select {
+  background: var(--bg); color: var(--text); border: 2px solid var(--accent2);
+  border-radius: 10px; padding: 10px 12px; font-size: 1rem; min-width: 200px;
+}
+#fetch-btn {
+  background: linear-gradient(90deg, var(--accent3), var(--accent4)); color: #0d0b1f;
+  border: none; border-radius: 999px; padding: 12px 20px; font-weight: 800; cursor: pointer; font-size: .95rem;
+}
+#fetch-btn:disabled { opacity: .6; cursor: progress; }
+.fetch-form .hint { color: var(--muted); font-size: .8rem; margin: 12px 0 0; }
+.fetch-msg { margin: 10px 0 0; font-weight: 700; color: var(--accent3); }
+.filters-row { margin-bottom: 20px; }
+.filters-row label { display: flex; flex-direction: column; gap: 6px; font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; }

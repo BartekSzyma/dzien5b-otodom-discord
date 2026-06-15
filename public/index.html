@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mieszkania - otodom -> Discord</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="hero">
+  <h1>Mieszkania <span>otodom</span></h1>
+  <p>Pobierz najnowsze oferty i wyslij je na Discord</p>
+</header>
+
+<section class="fetch-form">
+  <form id="fetch-form">
+    <label>Miasto <input id="city" name="city" type="text" placeholder="np. Wroclaw" maxlength="60" required></label>
+    <label>Wojewodztwo <select id="woj" name="wojewodztwo" required></select></label>
+    <button id="fetch-btn" type="submit">Pobierz 10 najnowszych</button>
+  </form>
+  <p class="hint">Dziala dla miast na prawach powiatu (Wroclaw, Krakow, Warszawa, ...).</p>
+  <p id="fetch-msg" class="fetch-msg" hidden></p>
+</section>
+
+<section class="filters-row">
+  <label>Pokaz miasto <select id="city-filter"><option value="">wszystkie</option></select></label>
+</section>
+
+<section id="summary" class="summary"></section>
+
+<main class="charts">
+  <section class="card">
+    <div class="card-head">
+      <h2>Ceny wg dzielnicy</h2>
+      <button id="metric-toggle" type="button">Pokaz cene calkowita</button>
+    </div>
+    <div id="chart-districts" class="chart"></div>
+  </section>
+  <section class="card">
+    <div class="card-head"><h2>Cena vs powierzchnia</h2></div>
+    <div id="chart-scatter" class="chart"></div>
+  </section>
+</main>
+
+<div id="tooltip" class="tooltip" hidden></div>
+<script type="module" src="app.js"></script>
+</body>
+</html>
