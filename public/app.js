@@ -61,6 +61,12 @@ document.getElementById("metric-toggle").addEventListener("click", (e) => {
   loadListings();
 });
 
-await loadWojewodztwa();
-await loadCities();
-await loadListings();
+try {
+  await loadWojewodztwa();
+  await loadCities();
+  await loadListings();
+} catch (err) {
+  const msg = document.getElementById("fetch-msg");
+  msg.hidden = false;
+  msg.textContent = "Nie udalo sie zaladowac danych: " + err.message;
+}

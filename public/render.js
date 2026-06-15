@@ -75,7 +75,7 @@ export function renderScatter(offers) {
   for (const o of pts) {
     const c = el("circle", { cx: sx(o.powierzchnia), cy: sy(o.cena), r: 6,
       fill: ROOM_COLORS[bucket(o.pokoje)] || "#888", class: "dot" });
-    c.addEventListener("click", () => window.open(o.link, "_blank"));
+    c.addEventListener("click", () => window.open(o.link, "_blank", "noopener"));
     c.addEventListener("mousemove", (e) => showTip(e,
       `<b>${esc(o.tytul)}</b><br>${esc(o.dzielnica || "brak dzielnicy")}<br>${formatPLN(o.cena)} &middot; ${formatM2(o.powierzchnia)} &middot; ${o.pokoje} pok.`));
     c.addEventListener("mouseleave", hideTip);
