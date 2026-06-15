@@ -25,10 +25,13 @@ zawiodl, patrz FAQ na koncu.)
 3. Wybierz "Stworz wlasny" -> "Tylko dla mnie i znajomych".
 4. Nadaj nazwe (np. "Oferty mieszkan") i kliknij "Stworz".
 
-Serwery Discord sa darmowe. Twoje konto moze nalezec do maksymalnie 100 serwerow.
-Osobny limit dotyczy botow: niezweryfikowany bot moze byc maksymalnie na 100 serwerach
-(weryfikacja wymagana dopiero powyzej). Przy hobbystycznym uzyciu na wlasnym serwerze
-zaden z tych limitow nie jest problemem.
+Tworzenie serwera jest w 100% darmowe (nie wymaga zadnego planu platnego). Limit:
+konto bez Nitro moze nalezec do maksymalnie 100 serwerow - to wspolny limit dla serwerow,
+ktore tworzysz, i tych, do ktorych dolaczasz (tworzac serwer, jestes jego czlonkiem, wiec
+liczy sie do tej puli). Z Discord Nitro limit rosnie do 200. Do tego projektu wystarczy
+jeden serwer. Osobny limit dotyczy botow: niezweryfikowany bot moze byc maksymalnie na
+100 serwerach (weryfikacja wymagana dopiero powyzej). Przy hobbystycznym uzyciu na wlasnym
+serwerze zaden z tych limitow nie jest problemem.
 
 ## 4. Utworzenie aplikacji i bota
 
